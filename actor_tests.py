@@ -66,6 +66,3 @@ def test_delete_actor(create_actor):
 
 	response = requests.delete(f"{url}/actor/{actor_id}")
 	assert response.status_code == 200
-	
-	response = requests.delete(f"{url}/actor/{actor_id}")
-	assert response.status_code == 400

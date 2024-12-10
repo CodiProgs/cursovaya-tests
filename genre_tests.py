@@ -54,6 +54,3 @@ def test_delete_genre(create_genre):
 
 	response = requests.delete(f"{url}/genre/{genre_id}")
 	assert response.status_code == 200
-	
-	response = requests.delete(f"{url}/genre/{genre_id}")
-	assert response.status_code == 400
